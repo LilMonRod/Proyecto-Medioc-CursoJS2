@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Poke-proyecto medio curso JS2</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="containerHead width">
+      <img id="logo" src="img/pokemon-logo-9.gif" alt="logo poke-proyecto">
+      <h1> Bienvenido Pokentrenador</h1>
+    </div>
+    <div class="ContainerContent width">
+      <h2 class="titlecontent">¿Qué quieres hacer hoy?</h2>
+      <div class="clearfix">
+        <div class="box">
+          <img src="img/pika.gif" alt="click en el boton de abajo para ir con pikachu a pokedex" class="gif">
+          <!-- <button >Ir a pokédex</button> -->
+          <a href="#pokedex">Ir a pokédex</a>
+        </div>
+        <div class="box">
+          <img src="img/Eevee(1).gif" alt="click en el boton de abajo para ir con eevee a ¿Que carta pokémon eres?" class="gif">
+          <!-- <button id="pokeMe">¿Qué pokémon eres?</button> -->
+          <a href="#pokeMe">ir a ¿Qué carta pokémon eres?</a>
+        </div>
+      </div>
+    </div>
+    <div class="ContainerHistory width">
+      <h2>Historia pokémon</h2>
+      <p>Pokémon (ポケモン Pokemon?), abreviando su nombre original Pocket Monsters (ポケットモンスター Poketto Monsutā?, Monstruos de bolsillo) es un anime metaserial creado por Satoshi Tajiri, Junichi Masuda y Ken Sugimori, que narra la historia de Ash Ketchum, un joven entrenador Pokémon de Pueblo Paleta que comienza un viaje para alcanzar su sueño, ser un Maestro Pokémon. </p>
+      <h3>Argumento</h3>
+      <p>Ash Ketchum es un muchacho entusiasta a quien le gustan los pokémon y las batallas. Su gran pasión por los pokémon lo ha llevado a proponerse el objetivo de convertirse en Maestro Pokémon, el más alto grado de entrenamiento Pokémon, motivo por el cual comienza un viaje en búsqueda de este título.</p>
+      <p>Al cumplir 10 años, Ash tiene la oportunidad de recibir su pokémon inicial por parte del Profesor Oak. Desafortunadamente, se quedó dormido una noche antes de su primer día de viaje y para cuando llegó al laboratorio del profesor, todos los Pokémon iniciales (Bulbasaur, Charmander y Squirtle) ya habían sido elegidos por otros entrenadores.</p>
+      <p>Su insistencia por tener un Pokémon, le permitió recibir como su Pokémon inicial un Pikachu terco al que no le gusta entrar en las Poké Balls. Durante su recorrido por el bosque, por novatadas e intentos frustrados para capturar un pokémon, Ash y Pikachu son atacados por una bandada salvaje de Spearow. Para escapar de los pokémon voladores, Ash decide sumergirse a un río para no ser visto.</p>
+      <p>Al otro lado del río, una chica llamada Misty (que más tarde acompaña a Ash en su viaje con el pretexto de que le pague su bicicleta) estaba pescando pokémon acuáticos con su caña y por error captura a Ash y su Pikachu malherido que estaban sumergidos en el agua. Al observar que la manada de Spearow seguía tras ellos, Ash toma la bicicleta de Misty para dirigirse al Centro Pokémon y así poder curar a Pikachu pero al no poder huir a pesar de viajar en bicicleta, Ash se puso a sí mismo en peligro por defender a Pikachu.</p>
+      <p>Por medio de estas demostraciones de respeto y compromiso incondicional a su pokémon, Pikachu comenzó a sentir aprecio por Ash y su amistad se formó. Poco después en el Centro Pokémon, en una confrontación contra el Team/Equipo Rocket en donde se demostró que el gran poder de Pikachu sobrepasaba el poder de su evolución, el Team/Equipo Rocket constantemente intenta capturar al pokémon para Giovanni, jefe de la organización. Al llegar a Ciudad Pewter tras pasar el Bosque Viridian, Ash decide participar en la Liga Pokémon.</p>
+      <p>Para comenzar su travesía de recolección de medallas de gimnasio por toda la región Kanto, Brock es el primer líder de gimnasio que es desafiado por Ash a una batalla oficial. Sin embargo, al no poder vencer a Brock, Ash decide ir a otro gimnasio. Poco después Brock entrega a Ash su primera medalla de gimnasio y deja su cargo de líder de gimnasio para viajar junto con Ash y cumplir su sueño de ser un Criador Pokémon.</p>
+      <p>Desde ese día, Ash viaja por todo Kanto recolectando medallas de gimnasio en compañía de Misty y Brock.</p>
+    </div>
+      <div id="containerPokeMe" class="width">
+        <h2 id="pokeMe">¿Quieres saber qué carta pokémon eres según tu edad?</h2>
+        <form id="formPokeMe">
+          <label for="edad" class="">Digita tu edad</label>
+          <input type="text" id="edad">
+          <br>
+          <button type="submit">Calcular</button>
+        </form>
+        <img id="pokeball"src="img/Spinning_PokeBall.gif" alt="pokebola que contiene un pokémon que conincide con tu edad">
+        <div class="clearfix">
+          <div id="responsePokeme">
+          </div>
+          <div id="responsePokemeIMG">
+          </div>
+        </div>
+
+        <div id="containerTryAgain" class="width">
+          <button id="tryAgain" class="none">Intentar de nuevo</button>
+        </div>
+
+      </div>
+      <div class="ContainerTipos width">
+        <h2>Tipos de pokémon</h2>
+        <div class="clearfix">
+          <div class="box">
+            <ul>
+              <li>Normal</li>
+              <li>Fuego</li>
+              <li>Agua</li>
+              <li>Planta</li>
+              <li>Electrico</li>
+              <li>Hielo</li>
+              <li>Lucha</li>
+              <li>Veneno</li>
+              <li>Tierra</li>
+            </ul>
+          </div>
+          <div class="box">
+            <ul>
+              <li>Volador</li>
+              <li>Psiquico</li>
+              <li>Bicho</li>
+              <li>Roca</li>
+              <li>Fantasma</li>
+              <li>Dragón</li>
+              <li>Siniestro</li>
+              <li>Acero</li>
+              <li>Hada</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="containerPokedex width">
+        <h2 id="pokedex">Bienvenido a la Pokedex</h2>
+        <form id="formPokedex">
+          <label for="search" class="">Digita el nombre de la carta pokémon que buscas</label>
+          <input type="text" id="search">
+          <br>
+          <button type="submit">Buscar</button>
+        </form>
+        <div id="responsepokedex">
+        </div>
+        <button id="tryAgainDex" class="none">Buscar otro</button>
+      </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

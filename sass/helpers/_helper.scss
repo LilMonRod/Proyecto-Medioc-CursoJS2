@@ -1,0 +1,23 @@
+
+/****************
+      Helpers
+*****************/
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#86c9f4+0,639cf3+46,639cf3+53,86c9f4+100 */
+background: #86c9f4; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #86c9f4 0%, #639cf3 46%, #639cf3 53%, #86c9f4 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #86c9f4 0%,#639cf3 46%,#639cf3 53%,#86c9f4 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #86c9f4 0%,#639cf3 46%,#639cf3 53%,#86c9f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background-repeat: no-repeat;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86c9f4', endColorstr='#86c9f4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.none {
+  display: none;
+}

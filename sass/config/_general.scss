@@ -1,0 +1,82 @@
+#wrapper{
+  max-width: 1200px;
+}
+
+/*******Head********/
+.width {
+  max-width: 1040px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+img#logo {
+  max-width: 150px;
+  margin: 24px 0px 0px 20px;
+}
+.box {
+  width: 42%;
+  float: left;
+}
+.box+.box {
+  margin-left: 4%;
+}
+h1 {
+  display: inline;
+  margin-left: 25px;
+  color: $amarillo;
+}
+h2, h3 {
+  color: $amarillo;
+}
+h3 {
+  margin-top: 50px;
+}
+button, a {
+  color: $amarillo;
+  background-color: #1763bb;
+  padding: 7px 10px;
+  border: none;
+  border-bottom: 3px solid #0053B2;
+  border-radius: 6px;
+}
+a {
+  text-decoration: none;
+}
+.gif {
+  display: block;
+  max-width: 130px;
+}
+p {
+  font-size: 1.2rem;
+  color: $amarillo;
+}
+li {
+  color: $amarillo;
+}
+label {
+  color: $amarillo;
+}
+form {
+  padding: 20px;
+}
+form>button {
+  margin-top: 10px;
+}
+#responsePokeme {
+  float: right;
+  width: 48%;
+}
+#responsePokemeIMG {
+  float: right;
+  width: 48%;
+}
+#tryAgain {
+  margin-top: 20px;
+}
+#responsePokedex {
+  float: right;
+  width: 48%;
+}
+#responsepokedexIMG {
+  float: right;
+  width: 48%;
+}

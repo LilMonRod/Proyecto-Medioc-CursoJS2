@@ -24,10 +24,11 @@ h1 {
   margin-left: 25px;
   color: $amarillo;
 }
-h2, h3 {
+h2{
   color: $amarillo;
 }
 h3 {
+  color: $azulP;
   margin-top: 50px;
 }
 button, a {
@@ -47,13 +48,10 @@ a {
 }
 p {
   font-size: 1.2rem;
-  color: $amarillo;
-}
-li {
-  color: $amarillo;
+  color: $azulP;
 }
 label {
-  color: $amarillo;
+  color: $azulP;
 }
 form {
   padding: 20px;
@@ -79,4 +77,21 @@ form>button {
 #responsepokedexIMG {
   float: right;
   width: 48%;
+}
+li {
+  color: $azulP;
+
+}
+li::before {
+  content: "•  ";
+  color: $amarillo;
+}
+ul {
+  list-style: none
+}
+.dexlist {
+  display: inline-block;
+}
+.dexlist:nth-child(n) {
+  margin-right: 9px;
 }

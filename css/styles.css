@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Document
    ========================================================================== */
 /**
@@ -346,10 +347,11 @@ h1 {
   margin-left: 25px;
   color: #ffcb04; }
 
-h2, h3 {
+h2 {
   color: #ffcb04; }
 
 h3 {
+  color: #0059B2;
   margin-top: 50px; }
 
 button, a {
@@ -369,13 +371,10 @@ a {
 
 p {
   font-size: 1.2rem;
-  color: #ffcb04; }
-
-li {
-  color: #ffcb04; }
+  color: #0059B2; }
 
 label {
-  color: #ffcb04; }
+  color: #0059B2; }
 
 form {
   padding: 20px; }
@@ -401,5 +400,21 @@ form > button {
 #responsepokedexIMG {
   float: right;
   width: 48%; }
+
+li {
+  color: #0059B2; }
+
+li::before {
+  content: "•  ";
+  color: #ffcb04; }
+
+ul {
+  list-style: none; }
+
+.dexlist {
+  display: inline-block; }
+
+.dexlist:nth-child(n) {
+  margin-right: 9px; }
 
 /*# sourceMappingURL=styles.css.map */

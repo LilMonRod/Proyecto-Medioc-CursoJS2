@@ -6,7 +6,7 @@ let responsePokemeIMG = document.getElementById("responsePokemeIMG");
 let pokeball = document.getElementById("pokeball");
 let btnTryAgain = document.getElementById("tryAgain");
 let btnTryAgainDex = document.getElementById("tryAgainDex");
-
+let ContainerList = document.getElementById("cartas");
 
 let containerPokedex = document.getElementById("containerPokedex");
 let responsePokedex = document.getElementById("responsepokedex");
@@ -87,6 +87,7 @@ function obtenerDatosPokedex(event) {
 function tryAgain() {
   location.reload(true);
 }
+
 // getElements(): Crea un nuevo request para solicitar los datos.
 function getElements() {
   // Crea un nuevo XMLHttpRequest.
@@ -101,6 +102,13 @@ function getElements() {
   request.addEventListener('load', function (event) {
     // Obtiene la respuesta.
     response = event.target.response;
+    for (cards of response.cards){
+      let list = document.createElement('li');
+      list.innerText = cards.name;
+      list.setAttribute('class', "dexlist");
+      ContainerList.appendChild(list);
+
+    }
   });
 }
 getElements();
